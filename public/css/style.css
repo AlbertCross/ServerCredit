@@ -1,0 +1,58 @@
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .padding-form{
+    padding: 15px;
+  }
+  .more-files{
+    width: 30px;
+  }
+  .padd-input{
+    margin-top: 2rem;
+  }
+  .enviado{
+    background-color:rgb(15, 130, 207) ;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .autorizado{
+    background-color:rgb(38, 204, 46) ;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .rechazado{
+    background-color:rgb(207, 15, 15) ;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .imgDown{
+    width: 35px;
+  }
+  .div-pad div{ 
+    text-align: center;
+    padding: 10px;
+  }
