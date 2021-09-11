@@ -185,29 +185,4 @@ class ProspectosController extends Controller
         }
     }
     
-    //metodo mostrar el listado en la vista de lista de prospectos en la aplicacion
-    public function getListado(){
-        $listado = Prospecto::all();
-        return response()->json($listado);
-    }
-
-     //metodo para autorizar el prospecto haciendo una consulta y cambiando el estatus del prospecto desde la aplicacion
-    public function putUpdate(Request $request)
-    {
-        $prospecto= Prospecto::find($request->prospecto_id);
-        $prospecto->estatus=2;
-        $prospecto->save();
-        $estado=['save'=>'Resuelto'];
-        return response()->json($estado)
-    }
-
-    //metodo donde rechazo el prospecto guardado la observacion y cambiando el estatus del prospecto desde la aplicacion
-    public function postObservacionRechazar(Request $request){
-        $prospecto= Prospecto::find($request->prospecto_id);
-        $prospecto->observaciones=$request->observaciones;
-        $prospecto->estatus=3;
-        $prospecto->save();
-        $estado=['save'=>'Resuelto'];
-        return response()->json($estado)
-    }
 }

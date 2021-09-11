@@ -23,7 +23,7 @@ class CreateProspectosTable extends Migration
             $table->string('colonia');
             $table->string('codigo_postal');
             $table->string('telefono');
-            $table->string('rfc')->unique();
+            $table->string('rfc');
             $table->string('observaciones')->nullable();
             $table->integer('estatus');
             $table->timestamps();
