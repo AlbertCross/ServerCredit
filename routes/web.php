@@ -31,3 +31,5 @@ Route::get('verProspecto/{id}', [App\Http\Controllers\ProspectosController::clas
 Route::post('autorizarProspecto','App\Http\Controllers\ProspectosController@update')->name('autorizarProspecto');
 //ruta a rechazar prospecto regresandolo al listado
 Route::post('observacionRechazar','App\Http\Controllers\ProspectosController@observacionRechazar')->name('observacionRechazar');
+//ruta a la vista de la aplicacion movil
+Route::get('movil', [App\Http\Controllers\ProspectosController::class, 'movil'])->name('movil');

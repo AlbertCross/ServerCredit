@@ -184,5 +184,8 @@ class ProspectosController extends Controller
             return redirect('listado');
         }
     }
+    public function movil(){
+        return view('layouts.appMovil');
+    }
     
 }

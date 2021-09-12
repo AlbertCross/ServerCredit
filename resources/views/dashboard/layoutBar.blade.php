@@ -29,6 +29,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="{{url('listado')}}">Listado</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{route('movil')}}">Aplicación Movil</a>
+                    </li>
                 </ul>
             @elseif(Request::path()=="listado")
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -38,6 +41,21 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="{{url('listado')}}">Listado</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{route('movil')}}">Aplicación Movil</a>
+                    </li>
+                </ul>
+            @elseif(Request::path()=="movil")
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="{{ url('registro') }}">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="{{url('listado')}}">Listado</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="{{route('movil')}}">Aplicación Movil</a>
+                    </li>
                 </ul>
             @else
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -46,6 +64,9 @@
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="{{url('listado')}}">Listado</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{route('movil')}}">Aplicación Movil</a>
                 </li>
             </ul>
             @endif
